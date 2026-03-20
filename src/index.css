@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Nunito", sans-serif;
+  --font-script: "Great Vibes", cursive;
+
+  --color-brand-green: #2D5A27;
+  --color-brand-wine: #7B2D2D;
+  --color-brand-lime: #7CB342;
+  --color-brand-cream: #F5F0E8;
+  --color-brand-wood: #C4956A;
+  --color-brand-earth: #3E2723;
+  --color-brand-bone: #FDFAF5;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-cream text-brand-earth font-sans;
+    background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+.section-divider {
+  @apply flex justify-center py-8 opacity-30;
+}
+
+.btn-primary {
+  @apply bg-brand-wine text-brand-bone px-8 py-3 rounded-full font-serif text-xl transition-all hover:bg-brand-wine/90 hover:scale-105 active:scale-95 shadow-md;
+}
+
+.btn-secondary {
+  @apply border-2 border-brand-green text-brand-green px-8 py-3 rounded-full font-serif text-xl transition-all hover:bg-brand-green hover:text-brand-bone hover:scale-105 active:scale-95;
+}
+
+@keyframes slow-zoom {
+  0% { transform: scale(1.05); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1.05); }
+}
+
+.animate-slow-zoom {
+  animation: slow-zoom 20s ease-in-out infinite;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-brand-cream;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-brand-green rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-brand-wine;
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Sidrería Tapería El Centro",
+  "description": "Sitio web oficial de Sidrería Tapería El Centro en Aroncés, Cudillero. Cocina asturiana auténtica, cachopo, sidra escanciada y ambiente familiar.",
+  "requestFramePermissions": ["geolocation"]
+}
