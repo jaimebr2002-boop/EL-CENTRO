@@ -114,12 +114,12 @@ export default function App() {
       </nav>
 
       {/* HERO */}
-      <section id="inicio" className="relative h-screen w-full flex items-center justify-center overflow-hidden">
+      <section id="inicio" className="relative min-h-[110vh] md:h-screen w-full flex items-center justify-center overflow-hidden pt-20">
         <div className="absolute inset-0 z-0">
           <img 
             src="https://res.cloudinary.com/dfbsqy5ul/image/upload/v1774029518/Gemini_Generated_Image_ugtgh3ugtgh3ugtg_cleanup_jewx94.png" 
             alt="Sidrería Tapería El Centro Hero" 
-            className="w-full h-full object-cover scale-105 animate-slow-zoom"
+            className="w-full h-full object-cover scale-110 animate-slow-zoom"
             referrerPolicy="no-referrer"
           />
           <div className="absolute inset-0 bg-black/50 backdrop-sepia-[0.2]"></div>
@@ -131,9 +131,9 @@ export default function App() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <div className="inline-flex items-center bg-brand-lime/20 backdrop-blur-sm border border-brand-lime/30 text-brand-lime px-4 py-1 rounded-full mb-6">
-              <Award className="w-4 h-4 mr-2" />
-              <span className="text-sm font-bold uppercase tracking-widest">Travellers' Choice TripAdvisor</span>
+            <div className="inline-flex items-center bg-brand-lime/20 backdrop-blur-sm border border-brand-lime/30 text-brand-lime px-6 py-2 rounded-full mb-8">
+              <Award className="w-5 h-5 mr-2" />
+              <span className="text-xs md:text-sm font-bold uppercase tracking-widest">Ganador Travellers' Choice de TripAdvisor</span>
             </div>
             <h1 className="text-5xl md:text-7xl lg:text-8xl text-brand-bone font-serif mb-6 leading-tight">
               La mejor cocina asturiana <br />
